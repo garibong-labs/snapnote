@@ -1,0 +1,25 @@
+name: SnapNote
+options:
+  bundleIdPrefix: dev.garibong
+  deploymentTarget:
+    macOS: 14.0
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: dev.garibong.SnapNote
+    SWIFT_VERSION: 5.10
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 0.1.0
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  SnapNote:
+    type: application
+    platform: macOS
+    sources:
+      - path: SnapNote
+    settings:
+      base:
+        PRODUCT_NAME: SnapNote
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.productivity
+        INFOPLIST_KEY_NSPrincipalClass: NSApplication
+        INFOPLIST_KEY_NSHumanReadableCopyright: Garibong Labs
+        INFOPLIST_KEY_LSUIElement: YES

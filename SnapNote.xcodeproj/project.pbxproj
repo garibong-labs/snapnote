@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D16422B9A4CE469FB3DF369 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0814D92D8136325CE876A5 /* MainView.swift */; };
+		5A118ADA09DC715E54B138B4 /* ScreenshotWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBBDB628169FED0ABE69DD1 /* ScreenshotWatcher.swift */; };
+		6008F2A947C89E5395F4D1CA /* SnapNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74714583EC1FE7C1C8EA60F7 /* SnapNoteApp.swift */; };
+		8254F27D8E21499FDC6CF942 /* NotePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2AA9ABBE26B54EF05E5659 /* NotePanelView.swift */; };
+		C0249AB451D42CAE6B0B2FEF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B22285210850AE2ADE6B7 /* AppState.swift */; };
+		DB0EF1D8690C9DE54189C66C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA83FED69FDFB4C6544800B /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		019B22285210850AE2ADE6B7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1E0814D92D8136325CE876A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3A2AA9ABBE26B54EF05E5659 /* NotePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePanelView.swift; sourceTree = "<group>"; };
+		74714583EC1FE7C1C8EA60F7 /* SnapNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapNoteApp.swift; sourceTree = "<group>"; };
+		83D21575E79B8964A9278D99 /* SnapNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBBDB628169FED0ABE69DD1 /* ScreenshotWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotWatcher.swift; sourceTree = "<group>"; };
+		DFA83FED69FDFB4C6544800B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		016DFA8D602964A222C12BC4 /* SnapNote */ = {
+			isa = PBXGroup;
+			children = (
+				F74DDA571561CE49D7246AF7 /* App */,
+				505D7FD5CE0E4C245AC26455 /* Core */,
+				45AEACB660BD43F9929D7DC8 /* UI */,
+			);
+			path = SnapNote;
+			sourceTree = "<group>";
+		};
+		4593639AFD0B84011558E7E7 = {
+			isa = PBXGroup;
+			children = (
+				016DFA8D602964A222C12BC4 /* SnapNote */,
+				70C1EEA123FE2CCAA74F6915 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45AEACB660BD43F9929D7DC8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1E0814D92D8136325CE876A5 /* MainView.swift */,
+				3A2AA9ABBE26B54EF05E5659 /* NotePanelView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		505D7FD5CE0E4C245AC26455 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				019B22285210850AE2ADE6B7 /* AppState.swift */,
+				BEBBDB628169FED0ABE69DD1 /* ScreenshotWatcher.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		70C1EEA123FE2CCAA74F6915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83D21575E79B8964A9278D99 /* SnapNote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F74DDA571561CE49D7246AF7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DFA83FED69FDFB4C6544800B /* AppDelegate.swift */,
+				74714583EC1FE7C1C8EA60F7 /* SnapNoteApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C42C31B2839E72E5F5E0CCB4 /* SnapNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73722DA2A53466DB4683B03D /* Build configuration list for PBXNativeTarget "SnapNote" */;
+			buildPhases = (
+				87CA86B6641E6D1202963338 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapNote;
+			packageProductDependencies = (
+			);
+			productName = SnapNote;
+			productReference = 83D21575E79B8964A9278D99 /* SnapNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		757B696E29659C974C5EDD9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 6583F72B685A9358E1155629 /* Build configuration list for PBXProject "SnapNote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4593639AFD0B84011558E7E7;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C42C31B2839E72E5F5E0CCB4 /* SnapNote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87CA86B6641E6D1202963338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0EF1D8690C9DE54189C66C /* AppDelegate.swift in Sources */,
+				C0249AB451D42CAE6B0B2FEF /* AppState.swift in Sources */,
+				3D16422B9A4CE469FB3DF369 /* MainView.swift in Sources */,
+				8254F27D8E21499FDC6CF942 /* NotePanelView.swift in Sources */,
+				5A118ADA09DC715E54B138B4 /* ScreenshotWatcher.swift in Sources */,
+				6008F2A947C89E5395F4D1CA /* SnapNoteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2D17CA902EEF920D69D536D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Garibong Labs";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = SnapNote;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		306903329129CBFC731418DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Garibong Labs";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_NAME = SnapNote;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		39964292F1CA1889FED0B28B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.SnapNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		3A1964BE353977A18BCB5969 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.garibong.SnapNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6583F72B685A9358E1155629 /* Build configuration list for PBXProject "SnapNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1964BE353977A18BCB5969 /* Debug */,
+				39964292F1CA1889FED0B28B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73722DA2A53466DB4683B03D /* Build configuration list for PBXNativeTarget "SnapNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D17CA902EEF920D69D536D3 /* Debug */,
+				306903329129CBFC731418DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 757B696E29659C974C5EDD9B /* Project object */;
+}
