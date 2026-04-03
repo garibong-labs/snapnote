@@ -62,7 +62,11 @@ final class ScreenshotWatcher {
         return urls.filter { url in
             let name = url.lastPathComponent.lowercased()
             let isImage = ["png", "jpg", "jpeg", "heic"].contains(url.pathExtension.lowercased())
-            let looksLikeScreenshot = name.hasPrefix("screenshot") || name.hasPrefix("screen shot")
+            // Support English (Screenshot), Korean (스크린샷), and Japanese (スクリーンショット) macOS locales
+            let looksLikeScreenshot = name.hasPrefix("screenshot")
+                || name.hasPrefix("screen shot")
+                || url.lastPathComponent.hasPrefix("스크린샷")
+                || url.lastPathComponent.hasPrefix("スクリーンショット")
             return isImage && looksLikeScreenshot
         }
     }
