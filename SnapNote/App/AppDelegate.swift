@@ -3,18 +3,18 @@ import SwiftUI
 
 @MainActor
 final class AppDelegate: NSObject, NSApplicationDelegate {
+    /// AppDelegate owns AppState so the note-panel callback is wired up
+    /// at applicationDidFinishLaunching — before any window ever appears.
+    let appState = AppState()
+
     private var statusItem: NSStatusItem?
     private var notePanel: NSPanel?
-    private weak var appState: AppState?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
         configureStatusItem()
-    }
 
-    func configure(with appState: AppState) {
-        guard self.appState !== appState else { return }
-        self.appState = appState
+        // Wire the note-panel callback here, guaranteed to run before any user interaction.
         appState.onPresentNote = { [weak self] item in
             self?.showNotePanel(for: item)
         }
@@ -40,7 +40,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @objc private func checkNow() {
-        appState?.checkNow()
+        appState.checkNow()
     }
 
     @objc private func quitApp() {
@@ -49,7 +49,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private func showNotePanel(for item: ScreenshotItem) {
         if let panel = notePanel {
-            panel.contentView = NSHostingView(rootView: NotePanelView(item: item).environmentObject(appState ?? AppState()))
+            panel.contentView = NSHostingView(rootView: NotePanelView(item: item).environmentObject(appState))
             NSApp.activate(ignoringOtherApps: true)
             panel.makeKeyAndOrderFront(nil)
             return
@@ -66,7 +66,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         panel.level = .floating
         panel.center()
         panel.collectionBehavior = [.moveToActiveSpace]
-        panel.contentView = NSHostingView(rootView: NotePanelView(item: item).environmentObject(appState ?? AppState()))
+        panel.contentView = NSHostingView(rootView: NotePanelView(item: item).environmentObject(appState))
         notePanel = panel
 
         NSApp.activate(ignoringOtherApps: true)
