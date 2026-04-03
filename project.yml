@@ -8,7 +8,7 @@ settings:
     PRODUCT_BUNDLE_IDENTIFIER: dev.garibong.SnapNote
     SWIFT_VERSION: 5.10
     CURRENT_PROJECT_VERSION: 1
-    MARKETING_VERSION: 0.1.0
+    MARKETING_VERSION: 0.1.2
     GENERATE_INFOPLIST_FILE: YES
 targets:
   SnapNote:
@@ -23,3 +23,9 @@ targets:
         INFOPLIST_KEY_NSPrincipalClass: NSApplication
         INFOPLIST_KEY_NSHumanReadableCopyright: Garibong Labs
         INFOPLIST_KEY_LSUIElement: YES
+        ENABLE_HARDENED_RUNTIME: YES
+      configs:
+        Debug:
+          CODE_SIGN_ENTITLEMENTS: SnapNote/Resources/SnapNote-debug.entitlements
+        Release:
+          CODE_SIGN_ENTITLEMENTS: SnapNote/Resources/SnapNote.entitlements
